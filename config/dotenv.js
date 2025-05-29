@@ -1,0 +1,15 @@
+const dotenv = require("dotenv");
+
+dotenv.config();
+
+const DEEPAI_API_KEY = process.env.DEEPAI_API_KEY;
+const IMAGINE_API_KEY = process.env.IMAGINE_API_KEY;
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+const ASSISTANT_ID_TITLE = process.env.ASSISTANT_ID_TITLE;
+const ASSISTANT_ID_META = process.env.ASSISTANT_ID_META;
+const ASSISTANT_ID_CONTENT = process.env.ASSISTANT_ID_CONTENT;
+const ASSISTANT_ID_PROMPT = process.env.ASSISTANT_ID_PROMPT;
+
+const PORT = process.env.PORT || 5000;
+
+module.exports = {DEEPAI_API_KEY, IMAGINE_API_KEY, OPENAI_API_KEY, ASSISTANT_ID_TITLE, ASSISTANT_ID_META, ASSISTANT_ID_CONTENT,ASSISTANT_ID_PROMPT};
